@@ -45,7 +45,7 @@ dependencies {
 ```
 
 You can imlement LoaderView from layout .xml file. Then you can show/hide loader view from activity.
-```
+``` xml
     <com.mandh.loader.LoaderView
         android:id="@+id/loader_view"
         app:loaderSrc="@drawable/circular_arrow"
@@ -58,7 +58,7 @@ You can imlement LoaderView from layout .xml file. Then you can show/hide loader
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 ```
-```
+``` Java
     LoaderView loaderView = findViewById(R.id.loader_view);
     loaderView.setloaderStatus(true);
     loaderView.setloaderStatus(false);
@@ -73,7 +73,7 @@ You can imlement LoaderView from layout .xml file. Then you can show/hide loader
 
 
 You don't need add anything to xml layout. You can create insstance and set parameters. And then you can show/hide.
-```
+``` Java
     LoaderView loaderView = new LoaderView(this);       //Parameter is context
     loaderView.setLoaderImageHeight(75);                //Loader icon width value that is integer
     loaderView.setLoaderImageWidth(75);                 //Loader icon height value that is integer
