@@ -77,9 +77,9 @@ You don't need add anything to xml layout. You can create insstance and set para
     LoaderView loaderView = new LoaderView(this);       //Parameter is context
     loaderView.setLoaderImageHeight(75);                //Loader icon width value that is integer
     loaderView.setLoaderImageWidth(75);                 //Loader icon height value that is integer
-    loaderView.setLoaderOpacity(0.7);                   //Loader icon opacity that is float between 0-1
-    loaderView.setLoaderBackgroundColor('#ffffff');     //String color for background overlay
-    loaderView.setLoaderBackgroundOpacity(0.8);         //Opacity of background overlay that is float between 0-1
+    loaderView.setLoaderOpacity((float)0.7);                   //Loader icon opacity that is float between 0-1
+    loaderView.setLoaderBackgroundColor("#ffffff");     //String color for background overlay
+    loaderView.setLoaderBackgroundOpacity((float)0.8);         //Opacity of background overlay that is float between 0-1
 
     //RotationDirection.CLOCKWISE
     //RotationDirection.ANTI_CLOCKWISE
