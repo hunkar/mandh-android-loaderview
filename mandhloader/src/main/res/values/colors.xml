@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="user_name_color">#6096e6</color>
+    <color name="comment_color">#000000</color>
+    <color name="like_count_color">#000000</color>
+    <color name="comment_before_ago_color">#50000000</color>
+    <color name="loader_background_color">#ffffff</color>
+    <color name="comment_input_background">#4a47a3</color>
+    <color name="comment_text_color">#ffffff</color>
+</resources>

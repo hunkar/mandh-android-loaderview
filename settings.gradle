@@ -1,0 +1,3 @@
+rootProject.name = "Mandh Loader"
+include ':app'
+include ':mandhloader'

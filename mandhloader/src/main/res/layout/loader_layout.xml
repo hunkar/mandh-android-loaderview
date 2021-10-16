@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:chatview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/loader_disc_container"
+    android:visibility="gone"
+    android:background="@android:color/transparent"
+    >
+        <ImageView
+            android:id="@+id/loader_disc"
+            android:layout_centerInParent="true"
+            android:layout_width="@dimen/loader_image_size"
+            android:layout_height="@dimen/loader_image_size"
+            android:src="@drawable/loading"
+            android:background="@android:color/transparent"
+            />
+</RelativeLayout>

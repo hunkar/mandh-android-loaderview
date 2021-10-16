@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MandhLoladerView">
+        <attr name="loaderSrc" format="reference" />
+        <attr name="loaderOpacity" format="float" />
+        <attr name="loaderBackgroundOpacity" format="float" />
+        <attr name="loaderBackgroundColor" format="string" />
+        <attr name="loaderImageWidth" format="integer" />
+        <attr name="loaderImageHeight" format="integer" />
+        <attr name="rotationDirection" format="string" />
+    </declare-styleable>
+</resources>
