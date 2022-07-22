@@ -39,7 +39,7 @@ Add implementation to app/build.gradle
 ```
 dependencies {
     ...
-    implementation 'com.github.hunkar:mandh-android-loaderview:1.0.0'
+    implementation 'com.github.hunkar:mandh-android-loaderview:1.0.1'
     ...
 }
 ```
@@ -89,6 +89,15 @@ You don't need add anything to xml layout. You can create insstance and set para
 
     loaderView.setloaderStatus(true);
     loaderView.setloaderStatus(false);
+```
+
+Also you can show loader view as a Dialog. So, you can show your loader front of another dialogs.
+TODO: Other customization will be added to dialog loader view. Currently it doesn't support customization.
+``` Java
+    LoaderDialog loaderDialogView = new LoaderView(this);       //Parameter is context
+
+    loaderDialogView.showLoader();
+    loaderDialogView.hideLoader();
 ```
 
 ## ✍️ Authors <a name = "authors"></a>
