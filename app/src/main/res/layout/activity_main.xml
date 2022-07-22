@@ -224,24 +224,42 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
-        android:id="@+id/start_spinning"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_weight="1"
-        android:text="Start Spinning Loader" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_spinning"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Start Spinning Loader" />
+
+        <Button
+            android:id="@+id/start_spinning_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:text="Start Spinning Dialog Loader" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
 
     <com.mandh.loader.LoaderView
         android:id="@+id/xml_loaderview"
-        app:loaderSrc="@drawable/circular_arrow"
-        app:loaderBackgroundColor="#112233"
-        app:loaderImageHeight="500"
-        app:loaderBackgroundOpacity="0.8"
-        app:loaderOpacity="1"
-        app:loaderImageWidth="500"
-        app:rotationDirection="anticlockwise"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        app:loaderBackgroundColor="#112233"
+        app:loaderBackgroundOpacity="0.8"
+        app:loaderImageHeight="500"
+        app:loaderImageWidth="500"
+        app:loaderOpacity="1"
+        app:loaderSrc="@drawable/circular_arrow"
+        app:rotationDirection="anticlockwise" />
 
 </RelativeLayout>

@@ -10,12 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 
+import com.mandh.loader.LoaderDialog;
 import com.mandh.loader.LoaderView;
 import com.mandh.loader.RotationDirection;
 
 public class MainActivity extends AppCompatActivity {
     private LoaderView loaderView, xmlLoaderView;
-    private Button startSpinning;
+    private LoaderDialog loaderDialog;
+    private Button startSpinning, startSpinningDialog;
     private EditText opacity, backgroundOpacity, loaderHeight, loaderWidth, backgroundColor;
     private RadioButton secondImage, clockwise, fromXmlLoaderView;
 
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void defineElements() {
         loaderView = new LoaderView(this);
+        loaderDialog = new LoaderDialog(this);
+
         startSpinning = findViewById(R.id.start_spinning);
         opacity = findViewById(R.id.loader_opacity);
         backgroundOpacity = findViewById(R.id.background_opacity);
@@ -40,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         clockwise = findViewById(R.id.clockwise);
         xmlLoaderView = findViewById(R.id.xml_loaderview);
         fromXmlLoaderView = findViewById(R.id.from_xml);
+        startSpinningDialog = findViewById(R.id.start_spinning_dialog);
     }
 
     private void setListeners() {
@@ -70,6 +75,12 @@ public class MainActivity extends AppCompatActivity {
                 new Handler().postDelayed(
                         () -> loaderView.setloaderStatus(false), 5000);
             }
+        });
+
+        startSpinningDialog.setOnClickListener(v -> {
+            loaderDialog.showLoader();
+            new Handler().postDelayed(
+                    () -> loaderDialog.hideLoader(), 5000);
         });
     }
 }

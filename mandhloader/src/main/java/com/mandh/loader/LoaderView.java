@@ -77,7 +77,7 @@ public class LoaderView extends RelativeLayout {
      * @param attrs AttributeSet of view
      */
     private void setAttrs(AttributeSet attrs) {
-        ViewCompat.setTranslationZ(this, 9999);
+        ViewCompat.setTranslationZ(this, Float.MAX_VALUE);
 
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.MandhLoladerView, 0, 0);
 
